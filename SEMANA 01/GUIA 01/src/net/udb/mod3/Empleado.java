@@ -41,5 +41,16 @@ private Double salario;
 	public void setSalario(Double salario) {
 		this.salario = salario;
 	}
-
+	
+	public Double salarioNeto() {
+		return this.salario -=salario*0.10;
+	}
+	 @Override
+	    public String toString() {
+	        return "Empleado{" +
+	                "id=" + id +
+	                ", nombre='" + nombre + '\'' +
+	                ", salario=" + salario +
+	                '}';
+	    }
 }
