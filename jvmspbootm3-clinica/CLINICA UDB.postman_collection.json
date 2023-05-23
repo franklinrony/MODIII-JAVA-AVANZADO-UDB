@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "b622f522-98cf-4795-b299-6abe14927508",
+		"name": "CLINICA UDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "paciente",
+			"item": [
+				{
+					"name": "listaPacientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/paciente/listaPacientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"paciente",
+								"listaPacientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "guardarPaciente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nombrePaciente\": \"Maria Teresa\",\r\n        \"apellidoPaciente\": \"Cortez Barrera\",\r\n        \"identPaciente\": \"12344\",\r\n        \"direccionPaciente\": \"calle falsa 123\",\r\n        \"telefonoPaciente\": \"44444\",\r\n        \"emailPaciente\": \"maritere@gmail.com\"\r\n\r\n}\r\n    ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/paciente/guardarPaciente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"paciente",
+								"guardarPaciente"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
